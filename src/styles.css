@@ -6,6 +6,21 @@ body {
   padding: 0;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+
+/* Для футера можна додати стилі: */
+footer {
+  background-color: #111; /* або твій стиль */
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
 /* Обгортка всього сайту */
 .site-wrapper {
   display: flex;
@@ -57,6 +72,7 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
+  flex: 1;
 }
 
 /* Карточка товару */
