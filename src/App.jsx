@@ -22,10 +22,6 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/checkout" element={<Checkout />} />
             </Routes>
-          
-
-
-          </main>
           <footer>
             
             <div className="meregi">
@@ -50,6 +46,10 @@ function App() {
 
 
           </footer>
+
+
+          </main>
+          
         </div>
       </Router>
     </CartProvider>
