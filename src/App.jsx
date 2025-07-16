@@ -38,8 +38,8 @@ function App() {
 
 
              <div className="reklama">
-               ------------------------
-               <meta name="google-adsense-account" content="ca-pub-8203685269637046"></meta>
+               ---
+               
             </div>
 
 
