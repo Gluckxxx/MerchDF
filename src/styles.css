@@ -1,0 +1,279 @@
+body {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Обгортка всього сайту */
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.meregi h2 {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #0b7fdfaf;
+}
+
+.meregi {
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Відстань між посиланнями */
+  margin-top: 1rem;
+  flex-wrap: wrap; /* Щоб адаптувалося під мобільні */
+}
+
+.meregi a {
+  text-decoration: none;
+  color: white; /* Залежно від теми сайту */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.meregi a:hover {
+  color: #1886cf; /* Колір при наведенні */
+}
+
+.reklama{
+  text-align: center;
+  margin-top: 3rem;
+}
+/* Посилання */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Контент */
+.main-content {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Карточка товару */
+.product-card {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+/* Кнопка */
+.btn-red {
+  background-color: #e5d609;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-red:hover {
+  background-color: #e5d609;
+}
+
+/* Інпути */
+input,
+select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+/* Карточка товару в кошику */
+.cart-item {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+  max-width: 700px;
+  /*width: 50%;  Робимо вдвічі меншою */
+  margin: 0.5rem auto; /* Центруємо по горизонталі */
+  text-align: center; /* Центруємо вміст */
+  
+}
+
+.product-card h2 {
+  font-size: 1rem;         /* Розмір назви товару */
+  margin: 0.25rem 0;       /* Менший відступ зверху і знизу */
+}
+
+.product-card p {
+  font-size: 0.9rem;       /* Ціна трохи менша */
+  margin: 0.25rem 0;       /* Зменшити відступ */
+}
+
+.form-input {
+  width: 90%;
+  max-width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #555;
+  background-color: #333;
+  color: white;
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto; /* для центрованого поля */
+}
+/* Основна сітка: кошик + товари */
+.main-layout {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap; /* Щоб на вузьких екранах елементи спадали вниз */
+}
+
+/* Колонка з кошиком */
+.cart-column {
+  flex: 0 0 180px;
+  border: 2px solid white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s;
+  align-self: flex-start; /* ❗ НЕ дозволяє блоку розтягуватись */
+}
+.cart-column h2 {
+  /* ДОДАНО: центрування назви */
+  text-align: center;
+}
+/* Сітка товарів */
+.products-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  width: 100vw;         /* повна ширина вікна */
+  overflow: hidden;     /* щоб не було горизонтального скролу */
+  background: none;     /* прибирає червоний фон */
+  box-shadow: none;     /* прибирає тінь, якщо не треба */
+}
+
+header::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+
+.header-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Попап на весь екран */
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Зображення в попапі */
+.popup-img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 0 20px #000;
+}
+
+/* Кнопка закриття */
+.close-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 48px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1100;
+}
+
+.btn-red:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cart-list {
+  max-width: 620px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.checkout-item {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-name {
+  width: 33%;
+  font-weight: bold;
+  word-break: break-word;
+  align-items: start; 
+}
+
+.item-details-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.quantity-input {
+  width: 4rem;
+  background-color: #333333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+.item-price {
+  white-space: nowrap;
+}
+
+.remove-btn {
+  color: #e50914;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
