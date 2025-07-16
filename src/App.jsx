@@ -4,6 +4,7 @@ import Checkout from './pages/Checkout';
 import { CartProvider } from './context/CartContext';
 import './styles.css'; // обовʼязково переконайся, що це підключено
 
+
 function App() {
   return (
     <CartProvider>
@@ -38,6 +39,7 @@ function App() {
 
              <div className="reklama">
                ---
+               <meta name="google-adsense-account" content="ca-pub-8203685269637046"></meta>
             </div>
 
 
