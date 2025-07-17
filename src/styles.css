@@ -294,10 +294,39 @@ header::after {
   white-space: nowrap;
 }
 
+.header-banner-wrapper {
+  width: 100%;
+  height: 400px; /* змінюй як потрібно */
+  overflow: hidden;
+  position: relative;
+}
 
+.header-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 
 /* --- Адаптивність для мобільних екранів --- */
 @media (max-width: 768px) {
+
+.header-banner-wrapper {
+  width: 100%;
+  height: 200px; /* змінюй як потрібно */
+  overflow: hidden;
+  position: relative;
+}
+
+.header-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
   .main-layout {
     flex-direction: column;
     align-items: center;
@@ -364,7 +393,30 @@ header::after {
   }
 
 
+header {
+  margin: 0;
+  padding: 0;
+  width: 100vw;         /* повна ширина вікна */
+  overflow: hidden;     /* щоб не було горизонтального скролу */
+  background: none;     /* прибирає червоний фон */
+  box-shadow: none;     /* прибирає тінь, якщо не треба */
+}
 
+header::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+
+.header-banner {
+  width: 100%;
+  height: 300px;
+  display: block;
+  size: cover;
+  position: center;
+}
 
 
   

@@ -12,12 +12,14 @@ function App() {
       <Router>
         <div className="site-wrapper">
            <header className="header">
-            <img
-              src="/images/DFMerchLogo2.jpg"
-              alt="DF Merch Banner"
-              className="header-banner"
-            />
-            </header>
+  <div className="header-banner-wrapper">
+    <img
+      src="/images/DFMerchLogo2.jpg"
+      alt="DF Merch Banner"
+      className="header-banner-img"
+    />
+  </div>
+</header>
           <main className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />

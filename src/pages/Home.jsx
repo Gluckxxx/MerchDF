@@ -91,7 +91,7 @@ function Home() {
                 alt={product.name}
                 style={{
                   width: '100%',
-                  height: '150px',
+                  height: '200px',
                   objectFit: 'cover',
                   borderRadius: '0.5rem',
                   marginBottom: '0.5rem',
