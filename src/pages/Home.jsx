@@ -1,3 +1,4 @@
+//Home.jsx
 import { useState } from 'react';
 import { useCart } from '../context/CartContext';
 
