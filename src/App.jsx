@@ -19,6 +19,7 @@ function App() {
       className="header-banner-img"
     />
   </div>
+  <meta name="google-adsense-account" content="ca-pub-8203685269637046"></meta>
 </header>
           <main className="main-content">
             <Routes>

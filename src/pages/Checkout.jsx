@@ -143,6 +143,7 @@ emailjs.send('service_2v5q1p9', 'template_c5e6tpo', orderData, 'Dhu05mWLGyjLcpdN
         </form>
 
     </div>
+    <meta name="google-adsense-account" content="ca-pub-8203685269637046"></meta>
     </div>
   );
 }

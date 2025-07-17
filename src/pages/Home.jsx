@@ -23,6 +23,7 @@ function Home() {
 
   return (
     <div className="site-wrapper">
+      <meta name="google-adsense-account" content="ca-pub-8203685269637046"></meta>
       <div className="main-layout">
         {/* Кошик */}
         <div className="cart-column">
