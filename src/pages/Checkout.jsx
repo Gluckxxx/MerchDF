@@ -130,29 +130,39 @@ function Checkout() {
             />
           </div>
 
-          <div style={{ marginBottom: '0.5rem', fontWeight: 'bold' }}>Доставка:</div>
-          <div style={{ marginBottom: '1rem' }}>
-            <label style={{ marginRight: '1rem' }}>
-              <input
-                type="radio"
-                name="delivery"
-                value="НоваПошта"
-                checked={form.delivery === 'НоваПошта'}
-                onChange={e => setForm({ ...form, delivery: e.target.value })}
-              />{' '}
-              НоваПошта
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="delivery"
-                value="УкрПошта"
-                checked={form.delivery === 'УкрПошта'}
-                onChange={e => setForm({ ...form, delivery: e.target.value })}
-              />{' '}
-              УкрПошта
-            </label>
-          </div>
+          <div
+  style={{
+    marginBottom: '1rem',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.5rem',
+    alignItems: 'center', // центрує всі label по горизонталі
+    textAlign: 'center',  // центрує текст у label
+  }}
+>
+  <label style={{ display: 'flex', alignItems: 'center' }}>
+    <input
+      type="radio"
+      name="delivery"
+      value="НоваПошта"
+      checked={form.delivery === 'НоваПошта'}
+      onChange={e => setForm({ ...form, delivery: e.target.value })}
+      style={{ marginRight: '0.5rem' }}
+    />
+    НоваПошта
+  </label>
+  <label style={{ display: 'flex', alignItems: 'center' }}>
+    <input
+      type="radio"
+      name="delivery"
+      value="УкрПошта"
+      checked={form.delivery === 'УкрПошта'}
+      onChange={e => setForm({ ...form, delivery: e.target.value })}
+      style={{ marginRight: '0.5rem' }}
+    />
+    УкрПошта
+  </label>
+</div>
 
           <div style={{ marginBottom: '1rem' }}>
             <label htmlFor="city" style={{ display: 'block', marginBottom: '0.25rem' }}>
