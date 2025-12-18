@@ -5,7 +5,7 @@ import { useCart } from '../context/CartContext';
 const products = [
   { id: 1, name: 'Листівка 1 - 210х150', price: 50, image: '/images/Flayer1.jpg', inStock: true },
   { id: 2, name: 'Листівка 2 - 300х210', price: 50, image: '/images/Flayer2.jpg', inStock: true },
-  { id: 3, name: 'Листівка 3', price: 100, image: '/images/Flayer3.jpg', inStock: false },
+  { id: 3, name: 'Календар 2026', price: 100, image: '/images/2026.jpg', inStock: false },
   { id: 4, name: 'Флешка з піснями DF', price: 400, image: '/images/Flashka.jpg', inStock: true },
 ];
 
